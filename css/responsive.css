@@ -1,0 +1,100 @@
+/* =============================================
+   BRICKSY ENTERPRISE — Responsive Breakpoints
+   ============================================= */
+
+/* ---- Tablet & Below (max-width: 1024px) ---- */
+@media (max-width: 1024px) {
+  :root { --space-5xl: 5rem; --space-4xl: 4rem; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-2xl); }
+  .hero-stats { gap: var(--space-2xl); }
+  .nav-links { gap: 20px; }
+  .process-step { gap: var(--space-xl); }
+}
+
+/* ---- Tablet Portrait (max-width: 768px) ---- */
+@media (max-width: 768px) {
+  :root { --space-5xl: 4rem; --space-4xl: 3rem; --space-3xl: 2.5rem; }
+
+  /* Mobile Nav */
+  .nav-links {
+    position: fixed; top: 0; right: -100%;
+    width: 80%; max-width: 360px; height: 100vh;
+    background: var(--white);
+    flex-direction: column; align-items: flex-start;
+    padding: 100px 40px 40px; gap: 0;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.15);
+    transition: right var(--duration-normal) var(--ease-out);
+    z-index: 999;
+  }
+  .nav-links.active { right: 0; }
+  .nav-links a {
+    color: var(--text) !important;
+    padding: 14px 0; width: 100%;
+    border-bottom: 1px solid var(--cream);
+    font-size: 1rem;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--primary) !important; }
+  .nav-cta {
+    margin-top: var(--space-lg);
+    width: 100%;
+    text-align: center;
+    display: block !important;
+  }
+  .hamburger { display: flex; }
+
+  /* Grids */
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Hero */
+  .hero { min-height: 90vh; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); }
+  .hero-stats { flex-direction: column; gap: var(--space-lg); }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
+  .footer-bottom { flex-direction: column; gap: var(--space-md); text-align: center; }
+
+  /* Process */
+  .process-step { flex-direction: column; align-items: center; text-align: center; }
+  .step-connector { display: none; }
+
+  /* Page Hero */
+  .page-hero { min-height: 40vh; }
+
+  /* Section header */
+  .section-header { margin-bottom: var(--space-2xl); }
+
+  /* Testimonials */
+  .testimonial-slider { flex-direction: column; }
+}
+
+/* ---- Mobile (max-width: 480px) ---- */
+@media (max-width: 480px) {
+  :root { --space-5xl: 3rem; --space-4xl: 2.5rem; }
+  .container { padding: 0 var(--space-md); }
+  .hero { min-height: 85vh; }
+  .hero-content { padding: 0 var(--space-sm); }
+  .stat-card { padding: var(--space-xl); }
+  .stat-number { font-size: 2.2rem; }
+  .card-body { padding: var(--space-lg); }
+  .product-body { padding: var(--space-lg); }
+  .btn { padding: 12px 24px; font-size: var(--fs-caption); }
+  .btn-lg { padding: 14px 30px; font-size: var(--fs-small); }
+  .whatsapp-float { width: 52px; height: 52px; bottom: 20px; right: 20px; font-size: 1.4rem; }
+  .whatsapp-float .tooltip { display: none; }
+  .back-to-top { bottom: 84px; right: 20px; width: 38px; height: 38px; }
+  .cta-banner { padding: var(--space-3xl) 0; }
+  .nav-links { width: 100%; max-width: none; }
+  .filter-tabs { justify-content: center; }
+}
+
+/* ---- Large Screens (min-width: 1440px) ---- */
+@media (min-width: 1440px) {
+  .container { padding: 0 var(--space-3xl); }
+  .hero-content { max-width: 850px; }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & News — Bricksy Enterprise</title>
+  <meta name="description" content="Stay updated with Bricksy Enterprise's latest news, sustainability insights, and construction industry trends.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232D5016'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold' font-size='18'%3EB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="nav-logo"><div class="logo-icon">B</div>Bricksy</a><div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="sustainability.html">Impact</a><a href="how-it-works.html">Process</a><a href="industries.html">Industries</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a><a href="inquiry.html" class="nav-cta">Get a Quote</a></div><div class="hamburger" id="hamburger"><span></span><span></span><span></span></div></div></nav>
+
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image:url('assets/images/blog-construction.png')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container"><div class="hero-content">
+      <div class="breadcrumb hero-animate-1"><a href="index.html">Home</a><span class="separator">/</span><span>Blog</span></div>
+      <h1 class="hero-animate-2">Blog & News</h1>
+      <p class="hero-description hero-animate-3">Insights on sustainable construction, industry trends, and company updates.</p>
+    </div></div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="grid grid-2 items-center animate-fade-up" style="gap:3rem;background:var(--cream);border-radius:var(--radius-xl);overflow:hidden">
+        <div><img src="assets/images/sustainability.png" alt="Featured Post" style="width:100%;height:360px;object-fit:cover"></div>
+        <div style="padding:2rem">
+          <span class="badge badge-primary" style="margin-bottom:1rem">Featured</span>
+          <h3 style="font-size:var(--fs-h3)">The Future of Sustainable Construction: Why Recycled Bricks Are Leading the Way</h3>
+          <p style="color:var(--text-light);margin:1rem 0">Explore how the construction industry is embracing circular economy principles and why eco-friendly bricks are becoming the material of choice for forward-thinking builders.</p>
+          <div style="display:flex;gap:1rem;align-items:center;color:var(--text-lighter);font-size:0.8rem;font-family:var(--font-accent)">
+            <span>April 20, 2026</span><span>•</span><span>5 min read</span>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm" style="margin-top:1.5rem">Read Article →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="bg-white" style="padding-top:0">
+    <div class="container">
+      <div class="filter-tabs animate-fade-up" style="margin-top:2rem" data-target="#blogGrid">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="sustainability">Sustainability</button>
+        <button class="filter-tab" data-filter="industry">Industry</button>
+        <button class="filter-tab" data-filter="company">Company News</button>
+        <button class="filter-tab" data-filter="tips">Tips & Guides</button>
+      </div>
+      <div class="grid grid-3 stagger-children" id="blogGrid">
+        <div class="blog-card" data-category="sustainability">
+          <div class="blog-img"><img src="assets/images/sustainability.png" alt="Blog Post"></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Sustainability</span><span>Apr 15, 2026</span></div>
+            <h4 class="blog-title">5 Reasons Why Eco-Bricks Outperform Traditional Clay Bricks</h4>
+            <p class="blog-excerpt">Discover the performance advantages of recycled bricks including strength, insulation, and environmental benefits.</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:0.5rem;padding-left:0">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="industry">
+          <div class="blog-img"><img src="assets/images/blog-construction.png" alt="Blog Post"></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Industry</span><span>Apr 8, 2026</span></div>
+            <h4 class="blog-title">India's Green Building Market: Trends and Opportunities in 2026</h4>
+            <p class="blog-excerpt">An analysis of the rapidly growing green building sector and how sustainable materials are driving the transformation.</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:0.5rem;padding-left:0">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="company">
+          <div class="blog-img"><img src="assets/images/about-factory.png" alt="Blog Post"></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Company</span><span>Mar 28, 2026</span></div>
+            <h4 class="blog-title">Bricksy Reaches 2 Million Brick Milestone — A Year in Review</h4>
+            <p class="blog-excerpt">Celebrating our achievement of producing over 2 million eco-friendly bricks and the impact we've made.</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:0.5rem;padding-left:0">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="tips">
+          <div class="blog-img"><img src="assets/images/hero-bg.png" alt="Blog Post"></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Guide</span><span>Mar 20, 2026</span></div>
+            <h4 class="blog-title">A Builder's Guide to Choosing the Right Eco-Brick for Your Project</h4>
+            <p class="blog-excerpt">From structural walls to decorative facades — learn which brick type is best suited for your specific needs.</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:0.5rem;padding-left:0">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="sustainability">
+          <div class="blog-img"><img src="assets/images/product-bricks.png" alt="Blog Post"></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Sustainability</span><span>Mar 12, 2026</span></div>
+            <h4 class="blog-title">How Circular Economy is Reshaping the Construction Supply Chain</h4>
+            <p class="blog-excerpt">Understanding the shift from linear to circular models in construction material sourcing and manufacturing.</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:0.5rem;padding-left:0">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="industry">
+          <div class="blog-img"><img src="assets/images/blog-construction.png" alt="Blog Post" style="filter:hue-rotate(10deg)"></div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>Industry</span><span>Mar 5, 2026</span></div>
+            <h4 class="blog-title">IGBC Green Certification: What Builders Need to Know in 2026</h4>
+            <p class="blog-excerpt">A comprehensive guide to green building certifications and how eco-friendly materials contribute to earning credits.</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:0.5rem;padding-left:0">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-cream">
+    <div class="container text-center" style="max-width:600px">
+      <span class="section-subtitle animate-fade-up">Stay Updated</span>
+      <h2 class="animate-fade-up">Subscribe to Our Newsletter</h2>
+      <p class="animate-fade-up" style="color:var(--text-light);margin-bottom:2rem">Get the latest sustainability insights, product launches, and industry news delivered to your inbox.</p>
+      <form class="animate-fade-up" onsubmit="handleNewsletter(event)" style="display:flex;gap:0.5rem">
+        <input type="email" class="form-input" placeholder="Enter your email address" required style="flex:1">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo" style="color:var(--white)"><div class="logo-icon">B</div> Bricksy Enterprise</a><p>Transforming waste into building solutions.</p><div class="footer-social"><a href="#">f</a><a href="#">ig</a><a href="#">in</a><a href="#">𝕏</a></div></div><div><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div><div><h4>Support</h4><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="inquiry.html">Quote</a></li><li><a href="blog.html">Blog</a></li></ul></div><div><h4>Newsletter</h4><form class="footer-newsletter" onsubmit="handleNewsletter(event)"><input type="email" placeholder="Your email" required><button type="submit" class="btn btn-primary btn-sm" style="width:100%">Subscribe</button></form></div></div><div class="footer-bottom"><p>&copy; 2026 Bricksy Enterprise.</p><p>Built with 🌱</p></div></div></footer>
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">💬<span class="tooltip">Chat with us!</span></a>
+  <button class="back-to-top">↑</button>
+  <script src="js/main.js"></script><script src="js/animations.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{initFilterTabs()});</script>
+</body>
+</html>

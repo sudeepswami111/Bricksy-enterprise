@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products — Bricksy Enterprise</title>
+  <meta name="description" content="Explore Bricksy's range of eco-friendly bricks — EcoCore, ThermoGreen, and ArtisanBlend — engineered from recycled waste for modern construction.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232D5016'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold' font-size='18'%3EB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">B</div>Bricksy</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html" class="active">Products</a><a href="sustainability.html">Impact</a><a href="how-it-works.html">Process</a><a href="industries.html">Industries</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="inquiry.html" class="nav-cta">Get a Quote</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image:url('assets/images/product-bricks.png')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="breadcrumb hero-animate-1"><a href="index.html">Home</a><span class="separator">/</span><span>Products</span></div>
+        <h1 class="hero-animate-2">Our Products</h1>
+        <p class="hero-description hero-animate-3">Premium eco-friendly bricks engineered from recycled materials — built for performance, designed for sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Filter & Catalog -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="filter-tabs animate-fade-up" data-target="#productGrid">
+        <button class="filter-tab active" data-filter="all">All Products</button>
+        <button class="filter-tab" data-filter="structural">Structural</button>
+        <button class="filter-tab" data-filter="insulated">Insulated</button>
+        <button class="filter-tab" data-filter="decorative">Decorative</button>
+        <button class="filter-tab" data-filter="paving">Paving</button>
+      </div>
+      <div class="grid grid-3 stagger-children" id="productGrid">
+        <div class="product-card" data-category="structural">
+          <div class="product-img"><img src="assets/images/product-bricks.png" alt="EcoCore Standard"><span class="product-badge">Best Seller</span></div>
+          <div class="product-body">
+            <h4>EcoCore Standard</h4>
+            <p class="card-text">High-density recycled brick for structural walls and load-bearing construction.</p>
+            <div class="product-specs">
+              <div class="spec-item"><div class="spec-label">Size</div><div class="spec-value">230×110×75mm</div></div>
+              <div class="spec-item"><div class="spec-label">Strength</div><div class="spec-value">15 MPa</div></div>
+              <div class="spec-item"><div class="spec-label">Weight</div><div class="spec-value">2.8 kg</div></div>
+              <div class="spec-item"><div class="spec-label">Recycled</div><div class="spec-value">70%</div></div>
+            </div>
+            <a href="inquiry.html" class="btn btn-primary btn-sm" style="width:100%">Request Quote</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="insulated">
+          <div class="product-img"><img src="assets/images/product-bricks.png" alt="ThermoGreen" style="filter:hue-rotate(20deg)brightness(1.05)"><span class="product-badge" style="background:var(--accent-gold)">Premium</span></div>
+          <div class="product-body">
+            <h4>ThermoGreen Insulated</h4>
+            <p class="card-text">Thermal-insulated brick for energy-efficient buildings and green certifications.</p>
+            <div class="product-specs">
+              <div class="spec-item"><div class="spec-label">Size</div><div class="spec-value">230×110×75mm</div></div>
+              <div class="spec-item"><div class="spec-label">R-Value</div><div class="spec-value">2.4</div></div>
+              <div class="spec-item"><div class="spec-label">Weight</div><div class="spec-value">2.5 kg</div></div>
+              <div class="spec-item"><div class="spec-label">Recycled</div><div class="spec-value">80%</div></div>
+            </div>
+            <a href="inquiry.html" class="btn btn-primary btn-sm" style="width:100%">Request Quote</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="decorative">
+          <div class="product-img"><img src="assets/images/product-bricks.png" alt="ArtisanBlend" style="filter:sepia(0.3)brightness(1.1)"><span class="product-badge" style="background:var(--secondary)">New</span></div>
+          <div class="product-body">
+            <h4>ArtisanBlend Facade</h4>
+            <p class="card-text">Decorative facing brick with unique textures for architectural exteriors.</p>
+            <div class="product-specs">
+              <div class="spec-item"><div class="spec-label">Size</div><div class="spec-value">230×110×50mm</div></div>
+              <div class="spec-item"><div class="spec-label">Finish</div><div class="spec-value">Textured</div></div>
+              <div class="spec-item"><div class="spec-label">Weight</div><div class="spec-value">2.2 kg</div></div>
+              <div class="spec-item"><div class="spec-label">Recycled</div><div class="spec-value">65%</div></div>
+            </div>
+            <a href="inquiry.html" class="btn btn-primary btn-sm" style="width:100%">Request Quote</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="structural">
+          <div class="product-img"><img src="assets/images/product-bricks.png" alt="EcoCore Heavy" style="filter:brightness(0.9)contrast(1.1)"><span class="product-badge">Heavy Duty</span></div>
+          <div class="product-body">
+            <h4>EcoCore Heavy Duty</h4>
+            <p class="card-text">Reinforced brick for heavy load applications, foundations, and retaining walls.</p>
+            <div class="product-specs">
+              <div class="spec-item"><div class="spec-label">Size</div><div class="spec-value">230×110×75mm</div></div>
+              <div class="spec-item"><div class="spec-label">Strength</div><div class="spec-value">25 MPa</div></div>
+              <div class="spec-item"><div class="spec-label">Weight</div><div class="spec-value">3.2 kg</div></div>
+              <div class="spec-item"><div class="spec-label">Recycled</div><div class="spec-value">60%</div></div>
+            </div>
+            <a href="inquiry.html" class="btn btn-primary btn-sm" style="width:100%">Request Quote</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="paving">
+          <div class="product-img"><img src="assets/images/product-bricks.png" alt="UrbanPave" style="filter:hue-rotate(-10deg)saturate(1.2)"><span class="product-badge" style="background:var(--secondary)">Popular</span></div>
+          <div class="product-body">
+            <h4>UrbanPave Interlocking</h4>
+            <p class="card-text">Durable interlocking pavers for driveways, walkways, and outdoor spaces.</p>
+            <div class="product-specs">
+              <div class="spec-item"><div class="spec-label">Size</div><div class="spec-value">200×100×60mm</div></div>
+              <div class="spec-item"><div class="spec-label">Strength</div><div class="spec-value">35 MPa</div></div>
+              <div class="spec-item"><div class="spec-label">Weight</div><div class="spec-value">2.4 kg</div></div>
+              <div class="spec-item"><div class="spec-label">Recycled</div><div class="spec-value">75%</div></div>
+            </div>
+            <a href="inquiry.html" class="btn btn-primary btn-sm" style="width:100%">Request Quote</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="insulated">
+          <div class="product-img"><img src="assets/images/product-bricks.png" alt="ClimateShield" style="filter:hue-rotate(30deg)brightness(1.1)"><span class="product-badge" style="background:var(--accent-gold)">Eco+</span></div>
+          <div class="product-body">
+            <h4>ClimateShield Block</h4>
+            <p class="card-text">Advanced hollow block with superior thermal and acoustic insulation properties.</p>
+            <div class="product-specs">
+              <div class="spec-item"><div class="spec-label">Size</div><div class="spec-value">400×200×200mm</div></div>
+              <div class="spec-item"><div class="spec-label">R-Value</div><div class="spec-value">3.8</div></div>
+              <div class="spec-item"><div class="spec-label">Weight</div><div class="spec-value">8.5 kg</div></div>
+              <div class="spec-item"><div class="spec-label">Recycled</div><div class="spec-value">85%</div></div>
+            </div>
+            <a href="inquiry.html" class="btn btn-primary btn-sm" style="width:100%">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="bg-cream">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="section-subtitle animate-fade-up">Compare</span>
+        <h2 class="animate-fade-up">Product Comparison</h2>
+      </div>
+      <div class="animate-fade-up" style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md)">
+          <thead>
+            <tr style="background:var(--primary);color:var(--white)">
+              <th style="padding:16px 20px;text-align:left;font-family:var(--font-accent);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em">Feature</th>
+              <th style="padding:16px 20px;text-align:center;font-family:var(--font-accent);font-size:0.85rem">EcoCore</th>
+              <th style="padding:16px 20px;text-align:center;font-family:var(--font-accent);font-size:0.85rem">ThermoGreen</th>
+              <th style="padding:16px 20px;text-align:center;font-family:var(--font-accent);font-size:0.85rem">ArtisanBlend</th>
+              <th style="padding:16px 20px;text-align:center;font-family:var(--font-accent);font-size:0.85rem">UrbanPave</th>
+            </tr>
+          </thead>
+          <tbody style="font-size:0.9rem">
+            <tr style="border-bottom:1px solid var(--cream)"><td style="padding:14px 20px;font-weight:500">Compressive Strength</td><td style="padding:14px 20px;text-align:center">15 MPa</td><td style="padding:14px 20px;text-align:center">12 MPa</td><td style="padding:14px 20px;text-align:center">10 MPa</td><td style="padding:14px 20px;text-align:center">35 MPa</td></tr>
+            <tr style="border-bottom:1px solid var(--cream);background:var(--warm-white)"><td style="padding:14px 20px;font-weight:500">Recycled Content</td><td style="padding:14px 20px;text-align:center">70%</td><td style="padding:14px 20px;text-align:center">80%</td><td style="padding:14px 20px;text-align:center">65%</td><td style="padding:14px 20px;text-align:center">75%</td></tr>
+            <tr style="border-bottom:1px solid var(--cream)"><td style="padding:14px 20px;font-weight:500">Thermal Insulation</td><td style="padding:14px 20px;text-align:center">Standard</td><td style="padding:14px 20px;text-align:center">Superior</td><td style="padding:14px 20px;text-align:center">Standard</td><td style="padding:14px 20px;text-align:center">N/A</td></tr>
+            <tr style="border-bottom:1px solid var(--cream);background:var(--warm-white)"><td style="padding:14px 20px;font-weight:500">Best For</td><td style="padding:14px 20px;text-align:center">Walls</td><td style="padding:14px 20px;text-align:center">Green Buildings</td><td style="padding:14px 20px;text-align:center">Facades</td><td style="padding:14px 20px;text-align:center">Outdoors</td></tr>
+            <tr><td style="padding:14px 20px;font-weight:500">Water Absorption</td><td style="padding:14px 20px;text-align:center">&lt;12%</td><td style="padding:14px 20px;text-align:center">&lt;10%</td><td style="padding:14px 20px;text-align:center">&lt;15%</td><td style="padding:14px 20px;text-align:center">&lt;6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" style="position:relative;z-index:1">
+      <h2 class="animate-fade-up">Need a Custom Solution?</h2>
+      <p class="animate-fade-up">We offer tailored brick specifications for unique project requirements.</p>
+      <a href="inquiry.html" class="btn btn-secondary btn-lg animate-fade-up">Request Custom Quote</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo" style="color:var(--white)"><div class="logo-icon">B</div> Bricksy Enterprise</a><p>Transforming waste into sustainable building solutions.</p><div class="footer-social"><a href="#">f</a><a href="#">ig</a><a href="#">in</a><a href="#">𝕏</a></div></div>
+        <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="sustainability.html">Sustainability</a></li><li><a href="how-it-works.html">How It Works</a></li></ul></div>
+        <div><h4>Support</h4><ul class="footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="inquiry.html">Request a Quote</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div><h4>Newsletter</h4><form class="footer-newsletter" onsubmit="handleNewsletter(event)"><input type="email" placeholder="Your email" required><button type="submit" class="btn btn-primary btn-sm" style="width:100%">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Bricksy Enterprise.</p><p>Built with 🌱</p></div>
+    </div>
+  </footer>
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">💬<span class="tooltip">Chat with us!</span></a>
+  <button class="back-to-top">↑</button>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/forms.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{initFilterTabs()});</script>
+</body>
+</html>
