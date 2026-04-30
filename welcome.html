@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Bricksy Enterprise</title>
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- Background Elements -->
+  <div class="welcome-bg"></div>
+  <div class="welcome-gradient"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Main Content -->
+  <div class="welcome-content">
+    
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="Bricksy Logo" class="welcome-logo-img">
+      <div class="brand-name">Bricksy Enterprise</div>
+    </div>
+
+    <!-- The user wanted a creative slogan -->
+    <h1 class="tagline" id="tagline">
+      Giving <span class="highlight">Waste</span><br>a New <span class="highlight">Purpose.</span>
+    </h1>
+
+    <p class="subtitle">
+      Join us in revolutionizing the construction industry with eco-friendly bricks that build a greener tomorrow.
+    </p>
+
+    <div class="enter-btn-wrapper">
+      <button class="enter-btn" onclick="enterSite()">
+        <span>Enter the Website</span>
+        <span class="arrow">→</span>
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    // 1. Tagline Word Animation
+    const tagline = document.getElementById('tagline');
+    const text = tagline.innerHTML;
+    // Split text by spaces but preserve HTML tags (like <br> and <span class="highlight">)
+    // A simple way is to use a regex or just wrap raw words manually:
+    
+    // Manual wrapping since it's a known string:
+    tagline.innerHTML = `
+      <span class="word" style="animation-delay: 0.8s">Giving</span> 
+      <span class="word highlight" style="animation-delay: 1.0s">Waste</span><br>
+      <span class="word" style="animation-delay: 1.2s">a</span> 
+      <span class="word" style="animation-delay: 1.4s">New</span> 
+      <span class="word highlight" style="animation-delay: 1.6s">Purpose.</span>
+    `;
+
+    // Trigger animation
+    setTimeout(() => {
+      tagline.classList.add('animate-in');
+    }, 100);
+
+    // 2. Leaf Particle Effect
+    const particlesContainer = document.getElementById('particles');
+    
+    function createLeaf() {
+      const leaf = document.createElement('div');
+      leaf.classList.add('leaf');
+      
+      // Randomize leaf properties
+      const startLeft = Math.random() * window.innerWidth;
+      const size = Math.random() * 15 + 10; // 10px to 25px
+      const duration = Math.random() * 5 + 5; // 5s to 10s
+      const delay = Math.random() * 5;
+      
+      leaf.style.left = startLeft + 'px';
+      leaf.style.width = size + 'px';
+      leaf.style.height = size + 'px';
+      leaf.style.animationDuration = duration + 's';
+      leaf.style.animationDelay = delay + 's';
+      
+      // Some gold leaves
+      if(Math.random() > 0.7) {
+        leaf.style.backgroundColor = '#C9A84C';
+      }
+
+      particlesContainer.appendChild(leaf);
+
+      // Remove after animation
+      setTimeout(() => {
+        leaf.remove();
+      }, (duration + delay) * 1000);
+    }
+
+    // Create initial leaves
+    for(let i = 0; i < 30; i++) {
+      createLeaf();
+    }
+
+    // Continuously create leaves
+    setInterval(createLeaf, 800);
+
+    // 3. Enter Site Function
+    function enterSite() {
+      // Add a cool zoom out exit animation before leaving
+      document.body.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      document.body.style.opacity = '0';
+      document.body.style.transform = 'scale(1.05)';
+      
+      // Set the flag so we don't see this page again
+      sessionStorage.setItem('bricksy_welcome_seen', 'true');
+      
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 600);
+    }
+  </script>
+</body>
+</html>
